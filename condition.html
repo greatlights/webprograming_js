@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="test1"></h1>
+    <button onclick="timeport()">현재시간이 궁금하신가요>?</button>
+    <h1 id="test2"></h1>
+
+    <script>
+        function timeport(){
+            let time  = new Date().getHours()
+            let message;
+
+            document.getElementById('test1').innerHTML = `현재시간은 = ${time}`;
+            
+            if(time < 12){
+                message = "좋은 아침입니다. "
+            }
+            else {
+                message = "좋은 저녁이네요."
+            }
+            document.getElementById('test2').innerHTML = message
+        }
+           </script>
+</body>
+</html>0
