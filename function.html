@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>                     
+</head>
+<body>
+    <!-- <p id = "test"></p> 
+    <script>
+        let func = (a, b) => a * b;
+        document.getElementById("test").innerHTML = func(4, 5);
+        -->   
+        <!-- 함수실습 1  -->
+
+        <script>
+            //let a = 10;           //전역변수(포함하는 모든 함수에서 사용o)
+            let init = 1000000;
+            const num1 = 2222222222;
+            console.log(num1);
+            function add(){
+                let a = 10;         //지역변수(해당 함수에서만 사용 가능, 다른 함수에서는 불러오기 x)
+                let init = 100;
+                console.log(a);
+                console.log(init);
+                let b = 20;
+                cnt = 0;
+            }
+            const num1 = 3333333333;
+            console.log(num1);
+            add()
+            console.log(cnt);
+            console.log(init);   //가장 처음 init을 콘솔에서 출력함
+            console.log(b);
+            
+        </script>
+    </script>
+</body>
+</html>
