@@ -1,0 +1,13 @@
+  <h2 id='clock'></h2>
+    <script>
+        function setClock() {
+            let now = new Date();
+            let s = //작성부분 + ':' + now.getMinutes() + ':' + now.getSeconds();
+	    //출력부분 document.....
+            
+
+
+            setTimeout('setClock()', 1000);
+        }
+        //함수실행부분
+    </script>
