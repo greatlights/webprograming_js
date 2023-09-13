@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h2 id="test"></h2>
+        <script>
+            let admin = ["sunrin104"]
+            person = prompt("아이디를 입력하시오: ", "");
+            password = prompt("비밀번호를 입력하시요: ", "");
+            
+            for (let i = 0; i < admin.length; i++) {
+                if (password == admin[i]) {
+                    document.getElementById("test").innerHTML = "로그인 성공";
+                    break;
+                }
+                else{
+                    document.getElementById("test").innerHTML = "로그인 실패";
+                }
+            }
+        </script>
+    </body>
+</html>
