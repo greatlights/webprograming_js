@@ -1,0 +1,20 @@
+﻿<script>
+    function checkLength(elem, min, max) {
+        let s = elem.value;
+            if(s.lengh >= min && s.length <= max){
+                return true;
+            }
+            else{
+                elem.focus;
+                return false;
+            }
+
+        }
+    
+</script>
+<form>
+    이름(6-8 문자): <input type='text' id='name' />
+    <input type='button'
+        onclick="checkLength(document.getElementById('name'), 6, 8)"
+        value='확인' />
+</form>
